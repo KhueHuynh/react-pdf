@@ -427,7 +427,10 @@ ReactPDF.defaultProps = {
 
 ReactPDF.propTypes = {
   error: _propTypes2.default.oneOfType([_propTypes2.default.string, _propTypes2.default.node]),
-  file: _propTypes2.default.oneOfType([_propTypes2.default.string, _propTypes2.default.instanceOf(File), _propTypes2.default.instanceOf(Blob), _propTypes2.default.shape({
+  file: _propTypes2.default.oneOfType([_propTypes2.default.string,
+  // PropTypes.instanceOf(File),
+  // PropTypes.instanceOf(Blob),
+  _propTypes2.default.shape({
     data: _propTypes2.default.object,
     httpHeaders: _propTypes2.default.object,
     range: _propTypes2.default.object,

@@ -376,8 +376,8 @@ ReactPDF.propTypes = {
   ]),
   file: PropTypes.oneOfType([
     PropTypes.string,
-    PropTypes.instanceOf(File),
-    PropTypes.instanceOf(Blob),
+    // PropTypes.instanceOf(File),
+    // PropTypes.instanceOf(Blob),
     PropTypes.shape({
       data: PropTypes.object,
       httpHeaders: PropTypes.object,
